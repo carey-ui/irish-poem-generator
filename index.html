@@ -13,19 +13,26 @@
     <div class="container">
       <header><h1>AI Irish Poem Generator</h1></header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Irish Poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-wrapper">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a word to generate an Irish poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hints">i.e. butterflies, sunshine, flowers</div>
+        </div>
+
+        <div class="poem hidden" id="poem"></div>
+        <div id="poem-spinner">
+          <div class="loader hidden" id="loader"></div>
+        </div>
       </main>
 
       <footer>
