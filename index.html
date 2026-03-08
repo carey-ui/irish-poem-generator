@@ -8,42 +8,47 @@
     <title>AI Irish Poem Generator</title>
   </head>
   <body>
-    <header><h1>AI Irish Poem Generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Irish Poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        small spaces of silence
-        <br />
-        in between borrowed breaths
-        <br />arms tighten <br />at the whisper of a name
-      </div>
-    </main>
+    <div class="container">
+      <header><h1>AI Irish Poem Generator</h1></header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the Irish Poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          small spaces of silence
+          <br />
+          in between borrowed breaths
+          <br />arms tighten <br />at the whisper of a name
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a
-        href="https://www.shecodes.io/graduates/177281-carey-faherty"
-        target="blank"
-        >Carey Faherty</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/carey-ui/irish-poem-generator" target="blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://irishpoemgeneratorproject.netlify.app/" target="blank"
-        >Netlify</a
-      >.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a
+          href="https://www.shecodes.io/graduates/177281-carey-faherty"
+          target="blank"
+          >Carey Faherty</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/carey-ui/irish-poem-generator"
+          target="blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://irishpoemgeneratorproject.netlify.app/" target="blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="SRC/index.js"></script>
   </body>
 </html>
