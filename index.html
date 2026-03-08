@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="SRC/style.css" />
     <title>AI Irish Poem Generator</title>
   </head>
@@ -11,7 +12,7 @@
     <div class="container">
       <header><h1>AI Irish Poem Generator</h1></header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the Irish Poem"
@@ -22,12 +23,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          small spaces of silence
-          <br />
-          in between borrowed breaths
-          <br />arms tighten <br />at the whisper of a name
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
